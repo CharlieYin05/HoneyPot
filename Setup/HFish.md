@@ -211,11 +211,11 @@ tcp   LISTEN 0      4096                   *:1433            *:*    users:(("hfi
 https://[服务器公网IP]:4433/web/login
 
 选择 SQLite 作为数据库
-![HFish DB](Setup_Image/Hfish_SQLite.png)
+![HFish DB](Setup_Image/HFish_SQLite.png)
 
 进入后页面如下：
-![HFish Dashboard](Setup_Image/Hfish_Dashboard.png)
-![HFish Dashboard](Setup_Image/Hfish_Souce.png)
+![HFish Dashboard](Setup_Image/HFish_Dashboard.png)
+![HFish Dashboard](Setup_Image/HFish_Souce.png)
 
 记得换默认登陆密码
 
