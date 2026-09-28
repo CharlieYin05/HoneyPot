@@ -78,6 +78,17 @@ sudo systemctl disable --now rpcbind.socket rpcbind.service
 ss -lntup
 ```
 
+4.根据教程安装 `HFish`
+`https://github.com/hacklcx/HFish/blob/master/docs/2-2-linux.md`
+
+4.1 `wget` 下载安装包
+ 下载 `wget`:
+ ```
+ sudo apt update
+
+ sudo apt install -y wget
+ ```
+ 
 
 ___
 ## 技术栈
