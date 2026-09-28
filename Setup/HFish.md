@@ -79,7 +79,8 @@ ss -lntup
 ```
 
 4.根据教程安装 `HFish`
-`https://github.com/hacklcx/HFish/blob/master/docs/2-2-linux.md`
+
+教程链接：`https://github.com/hacklcx/HFish/blob/master/docs/2-2-linux.md`
 
 4.1 `wget` 下载安装包
  下载 `wget`:
@@ -88,7 +89,14 @@ ss -lntup
 
  sudo apt install -y wget
  ```
- 
+
+4.2 下载安装包
+```
+wget https://hfish.cn-bj.ufileos.com/hfish-3.3.6-linux-arm64.tgz
+```
+
+4.3 解压+安装
+创建
 
 ___
 ## 技术栈
@@ -97,3 +105,5 @@ ___
   - Docker / Docker Compose
   - HFish
   - UFW / iptables
+
+
