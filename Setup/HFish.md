@@ -56,6 +56,7 @@ Description: HFish Management
 ```
 
 2. 操作系统开放 4433 端口作为管理页面
+
 进入iptable在INPUT REJECT之前添加一条ACCEPT 4433
 ```
 sudo nano /etc/iptables/rules.v4
@@ -66,8 +67,9 @@ sudo nano /etc/iptables/rules.v4
 -A INPUT -j REJECT --reject-with icmp-host-prohibited
 ```
 3. 关闭 111 端口以减少暴露面
- https://docs.oracle.com/en-us/iaas/Content/File/Troubleshooting/check-mt-network-rpcinfo.htm
- 根据甲骨文官方的说明，该端口适用于 OCI File Storage / NFS Mount Target 的连通性检查。我的服务器没有挂载 OCI File Storge，因此可以关闭该端口和 `rpcbind` 进程。
+
+https://docs.oracle.com/en-us/iaas/Content/File/Troubleshooting/check-mt-network-rpcinfo.htm
+根据甲骨文官方的说明，该端口适用于 OCI File Storage / NFS Mount Target 的连通性检查。我的服务器没有挂载 OCI File Storge，因此可以关闭该端口和 `rpcbind` 进程。
 
 关闭进程：
 ```
@@ -83,6 +85,7 @@ ss -lntup
 教程链接：`https://github.com/hacklcx/HFish/blob/master/docs/2-2-linux.md`
 
 4.1 `wget` 下载安装包
+
  下载 `wget`:
  ```
  sudo apt update
