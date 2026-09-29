@@ -66,6 +66,27 @@ sudo nano /etc/iptables/rules.v4
 -A INPUT -p tcp -m state --state NEW -m tcp --dport 4433 -j ACCEPT
 -A INPUT -j REJECT --reject-with icmp-host-prohibited
 ```
+
+检查语法：
+```
+sudo iptables-restore --test < /etc/iptables/rules.v4
+```
+
+加载配置文件：
+```
+sudo iptables-restore < /etc/iptables/rules.v4
+```
+
+再检查：
+```
+sudo iptables -L INPUT -n -v --line-numbers
+```
+
+确认端口被监听：
+```
+sudo ss -lntp 'sport = :[port]'
+```
+
 ### 3. 关闭 111 端口以减少暴露面
 
 https://docs.oracle.com/en-us/iaas/Content/File/Troubleshooting/check-mt-network-rpcinfo.htm
